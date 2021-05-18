@@ -7,11 +7,12 @@
 }
 
 .search-box { 
+    flex-shrink: 2;
     background-color:rgba(255, 255, 255, 0.16);
     border: none;
     border-radius: 10px;
     height: 100%;
-    width: 55%;
+    width: 47rem;
     padding: 0 1rem;
 }
 
@@ -20,13 +21,16 @@
 }
 
 .profile {
-    box-sizing: border-box;
     align-items: center;
+    box-sizing: border-box;
     display: flex;
     height: 100%;
-    justify-content: space-between;
     padding: 0.75rem;
-    width: 6.625rem;
+    width: 106px;
+}
+
+.profile__name {
+    padding-left: 8px;
 }
 
 

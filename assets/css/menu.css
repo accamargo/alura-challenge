@@ -1,0 +1,61 @@
+.menu__link {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.menu__icon {
+    align-items: center;
+    background-color: rgba(80, 129, 251, 0.16);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-right: 1rem;
+    height: 3rem;
+    width: 3rem;
+}
+
+.menu__icon__image {
+    background-color: initial;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 1.5rem;
+    opacity: 0.48;
+    width: 1.5rem;
+}
+
+.menu__title {
+    opacity: 0.56;
+}
+
+/* Menu item on hover */
+.menu__link:hover .menu__icon {
+    background-color:rgba(80, 129, 251, 0.64)
+}
+
+.menu__link:hover .menu__icon__image {
+    opacity: 0.8;
+}
+.menu__link:hover .menu__title {
+    opacity: 0.72;
+}
+
+/* Menu item focus and active */
+.menu__link:focus .menu__icon, .menu__link--active .menu__icon{
+    background-color:rgb(80, 129, 251)
+}
+
+.menu__link:focus .menu__icon__image, .menu__link--active .menu__icon__image{
+    opacity: inherit;
+}
+.menu__link:focus .menu__title, .menu__link--active .menu__title{
+    opacity: inherit;
+}
+
+.menu__icon--codeEditor {
+    background-image: url(../img/icon_code.svg);
+}
+
+.menu__icon--community {
+    background-image: url(../img/icon_users.svg);
+}
