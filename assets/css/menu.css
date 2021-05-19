@@ -13,45 +13,54 @@
     margin-right: 1rem;
     height: 3rem;
     width: 3rem;
+    transition: 300ms ease-out;  
 }
 
 .menu__icon__image {
-    background-color: initial;
     background-repeat: no-repeat;
     display: inline-block;
     height: 1.5rem;
     opacity: 0.48;
     width: 1.5rem;
+    transition: 300ms ease-out;  
 }
 
 .menu__title {
     opacity: 0.56;
+    transition: 300ms ease-out;  
 }
 
-/* Menu item on hover */
+/* Items on hover */
 .menu__link:hover .menu__icon {
-    background-color:rgba(80, 129, 251, 0.64)
+    background-color:rgba(80, 129, 251, 0.64);
+    transition: 300ms ease-out;  
 }
 
 .menu__link:hover .menu__icon__image {
     opacity: 0.8;
+    transition: 300ms ease-out;  
 }
 .menu__link:hover .menu__title {
     opacity: 0.72;
+    transition: 300ms ease-out;  
 }
 
-/* Menu item focus and active */
+/* Items focus and active */
 .menu__link:focus .menu__icon, .menu__link--active .menu__icon{
-    background-color:rgb(80, 129, 251)
+    background-color: rgb(80, 129, 251);
+    transition: 300ms ease-out;  
 }
 
 .menu__link:focus .menu__icon__image, .menu__link--active .menu__icon__image{
     opacity: inherit;
+    transition: 300ms ease-out;  
 }
 .menu__link:focus .menu__title, .menu__link--active .menu__title{
     opacity: inherit;
+    transition: 300ms ease-out;  
 }
 
+/* Menu icons */
 .menu__icon--codeEditor {
     background-image: url(../img/icon_code.svg);
 }

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/menu.css">
+    <link rel="stylesheet" href="./assets/css/code-editor.css">
+
 </head>
 
 <body>
@@ -30,7 +32,7 @@
                             <div class="menu__icon ">
                                 <i class="menu__icon__image menu__icon--codeEditor "></i>
                             </div>
-                            <p class="menu__title">Editor de código</p>
+                            <h3 class="menu__title">Editor de código</h3>
                         </a>
                     </li>
                     <li class="menu__item">
@@ -38,12 +40,28 @@
                             <div class="menu__icon">
                                 <i class="menu__icon__image menu__icon--community"></i>
                             </div>
-                            <p class="menu__title">Comunidade</p>
+                            <h3 class="menu__title">Comunidade</h3>
                         </a>
                     </li>
                 </ul>
             </nav>
         </section>
+            
+        <section class="code-editor">
+            <div class="editor__background">
+                <div class="editor__field">
+                    <div class="editor__buttons">
+                        <i class="editor__button button--red"></i>
+                        <i class="editor__button button--yellow"></i>
+                        <i class="editor__button button--green"></i>
+                    </div>
+                    <textarea class="editor__input" spellCheck="false">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, magnam optio minima architecto similique tenetur corporis quod incidunt doloribus reprehenderit voluptatum. Odit alias quidem commodi asperiores eveniet vitae facere aperiam!</textarea>
+                </div>
+            </div>
+
+            <button class="editor__hightligth">Visualizar com o hightligth</button>
+        </section>
+
     </main>
 </body>
 </html>
