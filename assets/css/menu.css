@@ -1,3 +1,15 @@
+.menu {
+    width: 12rem;
+    margin-right: 1rem;
+}
+
+.menu__title {
+    letter-spacing: 0.4em;
+    font-size: 0.75rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
 .menu__link {
     display: flex;
     align-items: center;
@@ -25,7 +37,9 @@
     transition: 300ms ease-out;  
 }
 
-.menu__title {
+.menu__option {
+    font-size: 1rem;
+    font-weight: normal;
     opacity: 0.56;
     transition: 300ms ease-out;  
 }
@@ -40,22 +54,22 @@
     opacity: 0.8;
     transition: 300ms ease-out;  
 }
-.menu__link:hover .menu__title {
+.menu__link:hover .menu__option {
     opacity: 0.72;
     transition: 300ms ease-out;  
 }
 
 /* Items focus and active */
-.menu__link:focus .menu__icon, .menu__link--active .menu__icon{
+.menu__link:focus .menu__icon {
     background-color: rgb(80, 129, 251);
     transition: 300ms ease-out;  
 }
 
-.menu__link:focus .menu__icon__image, .menu__link--active .menu__icon__image{
+.menu__link:focus .menu__icon__image {
     opacity: inherit;
     transition: 300ms ease-out;  
 }
-.menu__link:focus .menu__title, .menu__link--active .menu__title{
+.menu__link:focus .menu__option {
     opacity: inherit;
     transition: 300ms ease-out;  
 }
@@ -68,3 +82,4 @@
 .menu__icon--community {
     background-image: url(../img/icon_users.svg);
 }
+
