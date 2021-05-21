@@ -1,0 +1,22 @@
+# dependency directories
+node_modules
+jspm_packages
+
+# dotenv environment variables file
+.env
+.env.test
+
+# logs
+logs
+*.log
+npm-debug.log*
+
+# eslint cache
+.eslintcache
+
+# VS Code 
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
