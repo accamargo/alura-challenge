@@ -1,0 +1,117 @@
+.project-form-section {
+    width: 17rem;
+}
+
+
+.project-form__legend {
+    letter-spacing: 0.4em;
+    font-size: 0.75rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.project-form__item {
+    background-color:rgba(255, 255, 255, 0.16);
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    height: 3.5rem;
+    padding: 0 1rem;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.project-form__item::placeholder {
+    color: rgba(255, 255, 255, 0.64);
+}
+
+.project-form__item:hover, .project-form__item:focus {
+    background-color: rgba(255, 255, 255, 0.24);
+    outline: none;
+}
+
+textarea.project-form__item{
+    height: 80px;
+    padding-top: 1rem;
+    resize: none;
+}
+
+.project-form-personalization {
+    margin-top: 40px;
+}
+
+select.project-form__item {
+    appearance: none; 
+    background-image: url(../img/select-vector.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.64);
+}
+
+.form-item__option {
+    background-color: rgb(65,83,106);
+    color: rgb(168, 176, 186);
+}
+
+.project-form__item.color-picker {
+    padding: 8px;
+    background-color: inherit;
+    border: 1px solid white;
+}
+
+.color-picker__apparence {
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    background-color: #6BD1FF;
+}
+  
+.color-picker__input{
+    opacity: 0;
+}
+
+.project-form__submit {
+    background-color: #5081FB;
+    border-radius: 8px;
+    color:  #051D3B;
+    cursor: pointer;
+    font-size: 16px;
+    height: 3.5rem;
+    margin-top: 32px;
+    width: 100%;
+    transition: 300ms ease-out;  
+}
+
+.project-form__submit:hover {
+    background-color: #7BA4FC;
+    transition: 300ms ease-out;  
+}
+
+
+.project-form__submit:focus {
+    background-color: #96B9FD;
+    transition: 300ms ease-out;  
+    outline: none;
+}
+
+.project-form__submit:hover:active {
+    background-color:  #7BA4FC;
+    border: 4px solid rgba(80, 129, 251, 0.72);
+    transition: 300ms ease-out;  
+}
+
+
+
+@media screen and (max-width:1250px) {
+    .project-form-section {
+        width: 12rem;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .project-form-section {
+        width: 100%;
+    }
+}

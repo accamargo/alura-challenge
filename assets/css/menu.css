@@ -1,0 +1,99 @@
+.menu {
+    width: 12rem;
+}
+
+.menu__title {
+    letter-spacing: 0.4em;
+    font-size: 0.75rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.menu__link {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.menu__icon {
+    align-items: center;
+    background-color: rgba(80, 129, 251, 0.16);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-right: 1rem;
+    height: 3rem;
+    width: 3rem;
+    transition: 300ms ease-out;  
+}
+
+.menu__icon__image {
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 1.5rem;
+    opacity: 0.48;
+    width: 1.5rem;
+    transition: 300ms ease-out;  
+}
+
+.menu__option {
+    font-size: 1rem;
+    font-weight: normal;
+    opacity: 0.56;
+    transition: 300ms ease-out;  
+}
+
+/* Items on hover */
+.menu__link:hover .menu__icon {
+    background-color:rgba(80, 129, 251, 0.64);
+    transition: 300ms ease-out;  
+}
+
+.menu__link:hover .menu__icon__image {
+    opacity: 0.8;
+    transition: 300ms ease-out;  
+}
+.menu__link:hover .menu__option {
+    opacity: 0.72;
+    transition: 300ms ease-out;  
+}
+
+/* Items focus and active */
+.menu__link:focus {
+    outline: none;
+}
+.menu__link:focus .menu__icon {
+    background-color: rgb(80, 129, 251);
+    transition: 300ms ease-out;  
+}
+
+.menu__link:focus .menu__icon__image {
+    opacity: inherit;
+    transition: 300ms ease-out;  
+}
+.menu__link:focus .menu__option {
+    opacity: inherit;
+    transition: 300ms ease-out;  
+}
+
+/* Menu icons */
+.menu__icon--codeEditor {
+    background-image: url(../img/icon_code.svg);
+}
+
+.menu__icon--community {
+    background-image: url(../img/icon_users.svg);
+}
+
+
+@media screen and (max-width:1250px) {
+    .menu {
+        display: block;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .menu {
+        display: none;
+    }
+}

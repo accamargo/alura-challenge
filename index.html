@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Dev</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
+    <link rel="stylesheet" href="./assets/css/code-editor.css">
+    <link rel="stylesheet" href="./assets/css/project-form.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="./assets/img/logo.svg" alt="Logo Alura Dev">
+        <input class="search-box" type="search" placeholder="Busque por algo"></input>
+        <div class="profile">
+            <img class="profile__avatar" src="./assets/img/photo.png" alt="Avatar do usuário">
+            <p class="profile__name">Harry</p>
+        </div>
+        <nav class="topnav">
+            <a href="#" class="topnav__item search-icon"></a>
+            <a href="#" class="topnav__item menu-icon"></a>
+        </nav>
+    </header>
+    
+    <main class="body-content">
+        <section class="menu">
+            <nav>
+                <h2 class="menu__title">Menu</h2>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            <div class="menu__icon">
+                                <i class="menu__icon__image menu__icon--codeEditor "></i>
+                            </div>
+                            <h3 class="menu__option">Editor de código</h3>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            <div class="menu__icon">
+                                <i class="menu__icon__image menu__icon--community"></i>
+                            </div>
+                            <h3 class="menu__option">Comunidade</h3>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+            
+        <section class="code-editor">
+            <div id="teste" class="editor__background">
+                <div class="editor__field">
+                    <ul class="editor__idle-buttons">
+                        <li class="editor__idle-button idle-button--red"></li>
+                        <li class="editor__idle-button idle-button--yellow"></li>
+                        <li class="editor__idle-button idle-button--green"></li>
+                    </ul>
+                    <textarea id="codeEditorInput" name="" class="editor__input" spellCheck="false">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, magnam optio minima architecto similique tenetur corporis quod incidunt doloribus reprehenderit voluptatum. Odit alias quidem commodi asperiores eveniet vitae facere aperiam!</textarea>
+                </div>
+            </div>
+            <button class="editor__hightligth">Visualizar com o hightligth</button>
+        </section>
+
+        <section class="project-form-section">
+            <form class="project-form">
+                <fieldset class="project-form-your-project">
+                    <legend class="project-form__legend">Seu projeto</legend>
+                    <input id="projectFormName" type="text" class="project-form__item" placeholder="Nome do seu projeto" required>
+                    <textarea id="projectFormDescription" name="" class="project-form__item" placeholder="Descrição do seu projeto"></textarea>
+                </fieldset>
+
+                <fieldset class="project-form-personalization">
+                    <legend class="project-form__legend">Personalização</legend>
+                    <select id="projectFormLanguage" name="" class="project-form__item">
+                        <option value="JavaScript" class="form-item__option">JavaScript</option>
+                        <option value="Java" class="form-item__option">Java</option>
+                        <option value="Python" class="form-item__option">Python</option>
+                    </select>
+                    <div class="project-form__item color-picker">
+                        <div id="colorPickerApparence" class="color-picker__apparence">
+                            <input id="colorPickerInput" class="color-picker__input" type="color" value="#6BD1FF">
+                        </div>
+                    </div>
+                </fieldset>
+                <button class="project-form__submit" type="submit">Salvar projeto</button>
+            </form>
+        </section>
+
+    </main>
+<script src="script.js"></script>
+</body>
+</html>
