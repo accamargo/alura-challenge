@@ -1,6 +1,5 @@
 .menu {
     width: 12rem;
-    margin-right: 1rem;
 }
 
 .menu__title {
@@ -60,6 +59,9 @@
 }
 
 /* Items focus and active */
+.menu__link:focus {
+    outline: none;
+}
 .menu__link:focus .menu__icon {
     background-color: rgb(80, 129, 251);
     transition: 300ms ease-out;  
@@ -83,3 +85,15 @@
     background-image: url(../img/icon_users.svg);
 }
 
+
+@media screen and (max-width:1250px) {
+    .menu {
+        display: block;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .menu {
+        display: none;
+    }
+}

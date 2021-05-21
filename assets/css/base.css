@@ -21,9 +21,8 @@ a {
 }
 
 .body-content {
-    margin: 8px 2rem;
-
-    /* TEST */
+    margin: 8px 2rem 2rem;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }

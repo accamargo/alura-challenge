@@ -2,6 +2,7 @@
     width: 17rem;
 }
 
+
 .project-form__legend {
     letter-spacing: 0.4em;
     font-size: 0.75rem;
@@ -14,7 +15,7 @@
     border: none;
     border-radius: 8px;
     box-sizing: border-box;
-    height: 56px;
+    height: 3.5rem;
     padding: 0 1rem;
     font-size: 16px;
     width: 100%;
@@ -54,7 +55,6 @@ select.project-form__item {
     color: rgb(168, 176, 186);
 }
 
-
 .project-form__item.color-picker {
     padding: 8px;
     background-color: inherit;
@@ -78,7 +78,7 @@ select.project-form__item {
     color:  #051D3B;
     cursor: pointer;
     font-size: 16px;
-    height: 56px;
+    height: 3.5rem;
     margin-top: 32px;
     width: 100%;
     transition: 300ms ease-out;  
@@ -102,3 +102,16 @@ select.project-form__item {
     transition: 300ms ease-out;  
 }
 
+
+
+@media screen and (max-width:1250px) {
+    .project-form-section {
+        width: 12rem;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .project-form-section {
+        width: 100%;
+    }
+}
