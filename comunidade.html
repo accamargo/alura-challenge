@@ -58,11 +58,118 @@
                 </nav>
             </section>
 
+            <section class="projects">
 
-            </section>
+                <div class="project__card">
+                    <div class="project__background color--1">
+                        <div class="project__field">
+                            <ul class="project__idle-buttons">
+                                <li class="project__idle-button idle-button--red"></li>
+                                <li class="project__idle-button idle-button--yellow"></li>
+                                <li class="project__idle-button idle-button--green"></li>
+                            </ul>
+                            <pre><code class="project__snippet">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
 
-                
+const unfold = (f, seed) => {
+    const go = (f, seed, acc) => {
+        const res = f(seed)
+        return res ? go(f, res[1], acc.concat([res[0]])) : acc
+        }
+    return go(f, seed, [])
+}
+                            </code></pre>
+                        </div>
+                    </div>
+                    <div class="project__info">
+                        <h4 class="project__title">Título do projeto</h4>
+                        <p class="project__description">Descrição do projeto</p>
+                    </div>
+                </div>
 
+
+                <div class="project__card">
+                    <div class="project__background color--2">
+                        <div class="project__field">
+                            <ul class="project__idle-buttons">
+                                <li class="project__idle-button idle-button--red"></li>
+                                <li class="project__idle-button idle-button--yellow"></li>
+                                <li class="project__idle-button idle-button--green"></li>
+                            </ul>
+                            <pre><code class="project__snippet">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+const unfold = (f, seed) => {
+    const go = (f, seed, acc) => {
+        const res = f(seed)
+        return res ? go(f, res[1], acc.concat([res[0]])) : acc
+        }
+    return go(f, seed, [])
+}
+                            </code></pre>
+                        </div>
+                    </div>
+                    <div class="project__info">
+                        <h4 class="project__title">Título do projeto</h4>
+                        <p class="project__description">Descrição do projeto</p>
+                    </div>
+                </div>
+
+
+                <div class="project__card">
+                    <div class="project__background color--3">
+                        <div class="project__field">
+                            <ul class="project__idle-buttons">
+                                <li class="project__idle-button idle-button--red"></li>
+                                <li class="project__idle-button idle-button--yellow"></li>
+                                <li class="project__idle-button idle-button--green"></li>
+                            </ul>
+                            <pre><code class="project__snippet">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+const unfold = (f, seed) => {
+    const go = (f, seed, acc) => {
+        const res = f(seed)
+        return res ? go(f, res[1], acc.concat([res[0]])) : acc
+        }
+    return go(f, seed, [])
+}
+                            </code></pre>
+                        </div>
+                    </div>
+                    <div class="project__info">
+                        <h4 class="project__title">Título do projeto</h4>
+                        <p class="project__description">Descrição do projeto</p>
+                    </div>
+                </div>
+
+
+                <div class="project__card">
+                    <div class="project__background color--4">
+                        <div class="project__field">
+                            <ul class="project__idle-buttons">
+                                <li class="project__idle-button idle-button--red"></li>
+                                <li class="project__idle-button idle-button--yellow"></li>
+                                <li class="project__idle-button idle-button--green"></li>
+                            </ul>
+                            <pre><code class="project__snippet">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+const unfold = (f, seed) => {
+    const go = (f, seed, acc) => {
+        const res = f(seed)
+        return res ? go(f, res[1], acc.concat([res[0]])) : acc
+        }
+    return go(f, seed, [])
+}
+                            </code></pre>
+                        </div>
+                    </div>
+                    <div class="project__info">
+                        <h4 class="project__title">Título do projeto</h4>
+                        <p class="project__description">Descrição do projeto</p>
+                    </div>
+                </div>
             </section>
 
         </main>

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+.projects {
+    width: calc(100% - 15rem);
+    padding-left: 3rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project__card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    width: calc( 50% - 1rem);
+}
+
+.project__background {
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    flex-grow: 10;
+}
+
+.project:hover {
+    opacity: .8;
+}
+
+.project__field {
+    background: #141414;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 100%;
+    padding: 1rem;
+    width: 100%;
+}
+
+.project__idle-buttons {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.project__idle-button {
+    margin-right: 8px;
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+}
+
+.project__snippet {
+    background-color: inherit;
+    font-family: 'Roboto Mono', monospace;
+    font-size: .8rem;
+    height: 100%;
+    width: 100%;
+}
+
+.project__info {
+    background-color: rgba(0, 0, 0, 0.16);
+    border-radius: 0 0 8px 8px;
+    padding: 1.5rem;
+    flex-grow: 1;
+}
+
+.project__title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.project__description {
+    opacity: 0.8;
+}
+
+
+pre {
+    height: 200px;
+    overflow: hidden;
+    word-break: normal;
+    word-wrap: normal;
+    white-space: pre-wrap;
+}
+
+.idle-button--red {
+    background-color: #FF5F56;
+}
+
+.idle-button--yellow {
+    background-color: #FFBD2E;
+}
+
+.idle-button--green {
+    background-color: #27C93F;
+}
+
+.color--1 {
+    background-color: #9AFF6B;
+}
+.color--2 {
+    background-color: #6B83FF;
+}
+.color--3 {
+    background-color: #FFC46B;
+}
+.color--4 {
+    background-color: #FF6BCD;
+}
+
+
+
+@media screen and (max-width:1250px) {
+    .editor {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .editor {
+        width: 100%;
+    }
+    .editor__codeWrapper  {
+        min-height: calc(100vh - 23rem); 
+    }
+}
