@@ -1,6 +1,7 @@
-const like = document.querySelector('.project__like')
+const like = document.querySelectorAll('.project__like')
 
-like.addEventListener('click', function() {
-    like.classList.toggle('active')
-})
-
+like.forEach(element => {
+    element.addEventListener('click', function() {
+        this.classList.toggle('active')
+    })
+});

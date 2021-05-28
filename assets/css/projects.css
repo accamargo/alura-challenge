@@ -137,7 +137,6 @@ pre {
     display: flex;
     padding: 8px;
     border-radius: 16px;
-    transition: 300ms ease-out;
 }
 
 .project__comments:hover, 
