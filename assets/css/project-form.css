@@ -2,6 +2,10 @@
     width: 17rem;
 }
 
+.project-form__fieldset:not(:first-child) {
+    margin-top: 40px;
+}
+
 
 .project-form__legend {
     letter-spacing: 0.4em;
@@ -35,10 +39,6 @@ textarea.project-form__item{
     height: 80px;
     padding-top: 1rem;
     resize: none;
-}
-
-.project-form-personalization {
-    margin-top: 40px;
 }
 
 select.project-form__item {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,31 +10,37 @@
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/menu.css">
     <link rel="stylesheet" href="./assets/css/code-editor.css">
+    <link rel="stylesheet" href="./assets/css/atom-one-dark.css">
     <link rel="stylesheet" href="./assets/css/project-form.css">
 
 </head>
 
 <body>
     <header class="header">
-        <img class="logo" src="./assets/img/logo.svg" alt="Logo Alura Dev">
+        <h1>
+            <a class="logo" href="index.html">
+                <img class="logo__img" src="./assets/img/logo.svg" alt="Alura Dev">
+            </a>
+        </h1>
+
         <input class="search-box" type="search" placeholder="Busque por algo"></input>
         <div class="profile">
             <img class="profile__avatar" src="./assets/img/photo.png" alt="Avatar do usuário">
             <p class="profile__name">Harry</p>
         </div>
-        <nav class="topnav">
-            <a href="#" class="topnav__item search-icon"></a>
-            <a href="#" class="topnav__item menu-icon"></a>
-        </nav>
+        <div class="topnav">
+            <button class="topnav__item search-icon" type="button"></button>
+            <button" class="topnav__item menu-icon" type="button"></button>
+        </div>
     </header>
-    
+
     <main class="body-content">
         <section class="menu">
             <nav>
                 <h2 class="menu__title">Menu</h2>
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a href="#" class="menu__link">
+                        <a href="index.html" class="menu__link">
                             <div class="menu__icon">
                                 <i class="menu__icon__image menu__icon--codeEditor "></i>
                             </div>
@@ -41,7 +48,7 @@
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="menu__link">
+                        <a href="comunidade.html" class="menu__link">
                             <div class="menu__icon">
                                 <i class="menu__icon__image menu__icon--community"></i>
                             </div>
@@ -51,8 +58,8 @@
                 </ul>
             </nav>
         </section>
-            
-        <section class="code-editor">
+        
+        <section class="editor">
             <div id="teste" class="editor__background">
                 <div class="editor__field">
                     <ul class="editor__idle-buttons">
@@ -60,24 +67,33 @@
                         <li class="editor__idle-button idle-button--yellow"></li>
                         <li class="editor__idle-button idle-button--green"></li>
                     </ul>
-                    <textarea id="codeEditorInput" name="" class="editor__input" spellCheck="false">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, magnam optio minima architecto similique tenetur corporis quod incidunt doloribus reprehenderit voluptatum. Odit alias quidem commodi asperiores eveniet vitae facere aperiam!</textarea>
+                    <div class="editor__codeWrapper">
+                        <code id="codeEditorInput" class="editor__codeInput hljs" 
+                        contenteditable="true" spellcheck="false" aria-label="Editor">function teste() {
+                        const testando = document.querySelector('.dom')
+                        }</code>
+                    </div>
                 </div>
             </div>
-            <button class="editor__hightligth">Visualizar com o hightligth</button>
+            <button class="editor__hightligth" type="button" data-btn="highlight">Visualizar com o highlight</button>
         </section>
 
         <section class="project-form-section">
+
             <form class="project-form">
-                <fieldset class="project-form-your-project">
+                <fieldset class="project-form__fieldset">
                     <legend class="project-form__legend">Seu projeto</legend>
-                    <input id="projectFormName" type="text" class="project-form__item" placeholder="Nome do seu projeto" required>
-                    <textarea id="projectFormDescription" name="" class="project-form__item" placeholder="Descrição do seu projeto"></textarea>
+                    <input id="projectFormName" type="text" class="project-form__item" placeholder="Nome do seu projeto"
+                        required>
+                    <textarea id="projectFormDescription" name="" class="project-form__item" 
+                        placeholder="Descrição do seu projeto"></textarea>
                 </fieldset>
 
-                <fieldset class="project-form-personalization">
+                <fieldset class="project-form__fieldset">
                     <legend class="project-form__legend">Personalização</legend>
-                    <select id="projectFormLanguage" name="" class="project-form__item">
+                    <select id="projectFormLanguage" name="" class="project-form__item" data-form="projectLanguage">
                         <option value="JavaScript" class="form-item__option">JavaScript</option>
+                        <option value="HTML" class="form-item__option">HTML</option>
                         <option value="Java" class="form-item__option">Java</option>
                         <option value="Python" class="form-item__option">Python</option>
                     </select>
@@ -87,11 +103,14 @@
                         </div>
                     </div>
                 </fieldset>
-                <button class="project-form__submit" type="submit">Salvar projeto</button>
+                <button class="project-form__submit">Salvar projeto</button>
             </form>
         </section>
 
     </main>
-<script src="script.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script src="./assets/js/codeHighlight.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
