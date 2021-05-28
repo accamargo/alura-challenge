@@ -28,10 +28,10 @@
             <img class="profile__avatar" src="./assets/img/photo.png" alt="Avatar do usuário">
             <p class="profile__name">Harry</p>
         </div>
-        <nav class="topnav">
-            <a href="#" class="topnav__item search-icon"></a>
-            <a href="#" class="topnav__item menu-icon"></a>
-        </nav>
+        <div class="topnav">
+            <button class="topnav__item search-icon" type="button"></button>
+            <button" class="topnav__item menu-icon" type="button"></button>
+        </div>
     </header>
 
     <main class="body-content">
@@ -75,12 +75,13 @@
                     </div>
                 </div>
             </div>
-            <button class="editor__hightligth" data-btn="highlight">Visualizar com o highlight</button>
+            <button class="editor__hightligth" type="button" data-btn="highlight">Visualizar com o highlight</button>
         </section>
 
         <section class="project-form-section">
+
             <form class="project-form">
-                <fieldset class="project-form-your-project">
+                <fieldset class="project-form__fieldset">
                     <legend class="project-form__legend">Seu projeto</legend>
                     <input id="projectFormName" type="text" class="project-form__item" placeholder="Nome do seu projeto"
                         required>
@@ -88,7 +89,7 @@
                         placeholder="Descrição do seu projeto"></textarea>
                 </fieldset>
 
-                <fieldset class="project-form-personalization">
+                <fieldset class="project-form__fieldset">
                     <legend class="project-form__legend">Personalização</legend>
                     <select id="projectFormLanguage" name="" class="project-form__item" data-form="projectLanguage">
                         <option value="JavaScript" class="form-item__option">JavaScript</option>
@@ -102,7 +103,7 @@
                         </div>
                     </div>
                 </fieldset>
-                <button class="project-form__submit" type="submit">Salvar projeto</button>
+                <button class="project-form__submit">Salvar projeto</button>
             </form>
         </section>
 

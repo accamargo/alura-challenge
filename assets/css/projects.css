@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 .projects {
-    width: calc(100% - 15rem);
-    padding-left: 3rem;
+    width: calc(100% - 15.5rem);
+    padding-left: 3.5rem;
     margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
@@ -13,18 +13,18 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
-    width: calc( 50% - 1rem);
+    width: calc(50% - 1rem);
+}
+
+.project__card:focus {
+    outline: none;
 }
 
 .project__background {
     border-radius: 8px;
     box-sizing: border-box;
     padding: 1.5rem;
-    flex-grow: 10;
-}
-
-.project:hover {
-    opacity: .8;
+    height: 20rem;
 }
 
 .project__field {
@@ -61,7 +61,12 @@
     background-color: rgba(0, 0, 0, 0.16);
     border-radius: 0 0 8px 8px;
     padding: 1.5rem;
-    flex-grow: 1;
+    height: 3.5rem;
+}
+
+.project__card:hover .project__info,
+.project__card:focus .project__info {
+    border-radius: 0;
 }
 
 .project__title {
@@ -74,9 +79,8 @@
     opacity: 0.8;
 }
 
-
 pre {
-    height: 200px;
+    height: calc(100% - 1rem);
     overflow: hidden;
     word-break: normal;
     word-wrap: normal;
@@ -108,19 +112,79 @@ pre {
     background-color: #FF6BCD;
 }
 
+.project__social {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.16);
+    border-radius: 0 0 8px 8px;
+    padding: 0 1.5rem 1.5rem;
+}
+
+.project__card:hover .project__social,
+.project__card:focus .project__social {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project__social span {
+    padding-left: 8px;
+}
+
+.project__comments, 
+.project__like, 
+.project__author {
+    align-items: center;
+    display: flex;
+    padding: 8px;
+    border-radius: 16px;
+    transition: 300ms ease-out;
+}
+
+.project__comments:hover, 
+.project__like:hover,
+.project__author:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.project__comments:focus, 
+.project__like:focus,
+.project__author:focus {
+    background-color: rgba(255, 255, 255, 0.16);
+    outline: none;
+}
+
+.project__like svg {
+    fill: white;
+}
+
+.project__like.active svg {
+    fill: red;
+}
+
+.project__author .author__avatar {
+    height: 1.5rem;
+}
 
 
 @media screen and (max-width:1250px) {
-    .editor {
-        width: 50%;
+    .projects {
+        width: calc(100% - 15.5rem);
+        padding-left: 3.5rem;
+    }
+    
+    .project__card {
+        width: calc( 50% - 1rem);
     }
 }
 
 @media screen and (max-width:950px) {
-    .editor {
+    .projects {
         width: 100%;
+        padding: 0;
+        margin-bottom: 2rem;
     }
-    .editor__codeWrapper  {
-        min-height: calc(100vh - 23rem); 
+    
+    .project__card {
+        width: 100%
     }
 }
