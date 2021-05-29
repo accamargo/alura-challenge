@@ -17,7 +17,10 @@ hue-6-2: #e6c07b
 
 .hljs {
   color: #abb2bf;
-  background: inherit;
+}
+
+.hljs span {
+  font-family: 'Roboto Mono', monospace;
 }
 
 .hljs-comment,

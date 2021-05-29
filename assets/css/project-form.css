@@ -102,8 +102,6 @@ select.project-form__item {
     transition: 300ms ease-out;  
 }
 
-
-
 @media screen and (max-width:1250px) {
     .project-form-section {
         width: 12rem;
