@@ -56,9 +56,8 @@
     transition: 300ms ease-out;
 }
 
-.topnav__item:active {
+.topnav__item.pressed {
     background-color: rgba(80, 129, 251, 0.16);
-    transition: 300ms ease-out;
 }
 
 .search-icon {
