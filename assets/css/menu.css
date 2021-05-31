@@ -14,7 +14,7 @@
     margin-top: 16px;
 }
 
-.menu__link {
+.menu__link, .menu__link--active {
     display: flex;
     align-items: center;
 }
@@ -47,35 +47,37 @@
     transition: 300ms ease-out;  
 }
 
-/* Items on hover */
+/* Items on hover and focus*/
+.menu__link:focus .menu__icon,
 .menu__link:hover .menu__icon {
     background-color:rgba(80, 129, 251, 0.64);
     transition: 300ms ease-out;  
 }
 
+.menu__link:focus .menu__icon__image,
 .menu__link:hover .menu__icon__image {
     opacity: 0.8;
     transition: 300ms ease-out;  
 }
+
+.menu__link:focus .menu__option,
 .menu__link:hover .menu__option {
     opacity: 0.72;
     transition: 300ms ease-out;  
 }
 
-/* Items focus and active */
-.menu__link:focus {
-    outline: none;
-}
-.menu__link:focus .menu__icon {
+/* Item active */
+.menu__link--active .menu__icon {
     background-color: rgb(80, 129, 251);
     transition: 300ms ease-out;  
 }
 
-.menu__link:focus .menu__icon__image {
+.menu__link--active .menu__icon__image {
     opacity: inherit;
     transition: 300ms ease-out;  
 }
-.menu__link:focus .menu__option {
+
+.menu__link--active .menu__option {
     opacity: inherit;
     transition: 300ms ease-out;  
 }
@@ -87,6 +89,10 @@
 
 .menu__icon--community {
     background-image: url(../img/icon_users.svg);
+}
+
+.menu__profile {
+    display: none;
 }
 
 @media screen and (max-width:1250px) {
@@ -121,15 +127,9 @@
         padding-bottom: 1.5rem;
     }
 
-    .menu .profile {
+    .menu .menu__profile {
         display: flex;
         height: auto;
         margin: 0.5rem 0;
-    }
-    
-    .menu .profile:active,
-    .menu .profile:hover {
-        margin: 1rem 0;
-        transition: .2s ease-out;
     }
 }

@@ -26,3 +26,9 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+@media screen and (max-width:550px) {
+    .body-content {
+        margin: 8px 1rem 1rem;
+    }
+}

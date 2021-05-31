@@ -1,7 +1,7 @@
 // change color of input test
 const div = document.querySelector('#colorPickerApparence');
 const input = document.querySelector('#colorPickerInput');
-const teste = document.querySelector('#teste')
+const teste = document.querySelector('#editorBackground')
 
 div.addEventListener('click', event => {
   input.click();

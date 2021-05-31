@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="./assets/css/code-editor.css">
     <link rel="stylesheet" href="./assets/css/atom-one-dark.css">
     <link rel="stylesheet" href="./assets/css/project-form.css">
-
 </head>
 
 <body>
@@ -22,7 +21,6 @@
                 <img class="logo__img" src="./assets/img/logo.svg" alt="Alura Dev">
             </a>
         </h1>
-
         <input class="search-box" type="search" placeholder="Busque por algo"></input>
         <div class="profile">
             <img class="profile__avatar" src="./assets/img/photo.png" alt="Avatar do usuário">
@@ -30,9 +28,9 @@
         </div>
         <div class="topnav">
             <button class="topnav__item search-icon" type="button"></button>
-            <button" class="topnav__item menu-icon" type="button"></button>
+            <button class="topnav__item menu-icon" type="button"></button>
+            <button" class="topnav__item x-icon removeElement" type="button"></button>
         </div>
-        <!-- <div class="outsideMenu"></div> -->
     </header>
 
     <main class="body-content">
@@ -41,7 +39,7 @@
                 <h2 class="menu__title">Menu</h2>
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a href="index.html" class="menu__link">
+                        <a href="index.html" class="menu__link--active">
                             <div class="menu__icon">
                                 <i class="menu__icon__image menu__icon--codeEditor "></i>
                             </div>
@@ -58,21 +56,24 @@
                     </li>
                 </ul>
             </nav>
+            <div class="menu__profile profile">
+                <img class="profile__avatar" src="./assets/img/photo.png" alt="Avatar do usuário">
+                <p class="profile__name">Harry</p>
+            </div>
         </section>
         
         <section class="editor">
-            <div id="teste" class="editor__background">
+            <div id="editorBackground" class="editor__background">
                 <div class="editor__field">
                     <ul class="editor__idle-buttons">
                         <li class="editor__idle-button idle-button--red"></li>
                         <li class="editor__idle-button idle-button--yellow"></li>
                         <li class="editor__idle-button idle-button--green"></li>
                     </ul>
-                    <div class="editor__codeWrapper">
+                    <div class="editor__codeWrapper" data-editor>
                         <code id="codeEditorInput" class="editor__codeInput hljs" 
-                        contenteditable="true" spellcheck="false" aria-label="Editor">function teste() {
-                        const testando = document.querySelector('.dom')
-                        }</code>
+                            contenteditable="true" spellcheck="false" aria-label="Editor">
+                        </code>
                     </div>
                 </div>
             </div>
@@ -95,8 +96,7 @@
                     <select id="projectFormLanguage" name="" class="project-form__item" data-form="projectLanguage">
                         <option value="JavaScript" class="form-item__option">JavaScript</option>
                         <option value="HTML" class="form-item__option">HTML</option>
-                        <option value="Java" class="form-item__option">Java</option>
-                        <option value="Python" class="form-item__option">Python</option>
+                        <option value="CSS" class="form-item__option">CSS</option>
                     </select>
                     <div class="project-form__item color-picker">
                         <div id="colorPickerApparence" class="color-picker__apparence">
@@ -112,7 +112,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
     <script src="./assets/js/codeHighlight.js"></script>
     <script src="./assets/js/headerMenu.js"></script>
-    <script src="script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
