@@ -7,12 +7,16 @@
     font-size: 0.75rem;
     font-weight: normal;
     text-transform: uppercase;
+    margin-bottom: 16px;
 }
 
-.menu__link {
+.menu__item:not(:first-child) {
+    margin-top: 16px;
+}
+
+.menu__link, .menu__link--active {
     display: flex;
     align-items: center;
-    margin-top: 16px;
 }
 
 .menu__icon {
@@ -43,35 +47,37 @@
     transition: 300ms ease-out;  
 }
 
-/* Items on hover */
+/* Items on hover and focus*/
+.menu__link:focus .menu__icon,
 .menu__link:hover .menu__icon {
     background-color:rgba(80, 129, 251, 0.64);
     transition: 300ms ease-out;  
 }
 
+.menu__link:focus .menu__icon__image,
 .menu__link:hover .menu__icon__image {
     opacity: 0.8;
     transition: 300ms ease-out;  
 }
+
+.menu__link:focus .menu__option,
 .menu__link:hover .menu__option {
     opacity: 0.72;
     transition: 300ms ease-out;  
 }
 
-/* Items focus and active */
-.menu__link:focus {
-    outline: none;
-}
-.menu__link:focus .menu__icon {
+/* Item active */
+.menu__link--active .menu__icon {
     background-color: rgb(80, 129, 251);
     transition: 300ms ease-out;  
 }
 
-.menu__link:focus .menu__icon__image {
+.menu__link--active .menu__icon__image {
     opacity: inherit;
     transition: 300ms ease-out;  
 }
-.menu__link:focus .menu__option {
+
+.menu__link--active .menu__option {
     opacity: inherit;
     transition: 300ms ease-out;  
 }
@@ -85,6 +91,9 @@
     background-image: url(../img/icon_users.svg);
 }
 
+.menu__profile {
+    display: none;
+}
 
 @media screen and (max-width:1250px) {
     .menu {
@@ -95,5 +104,32 @@
 @media screen and (max-width:950px) {
     .menu {
         display: none;
+    }
+
+    .menu.active {
+        display: inline;
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        top: 6.25rem;
+        height: 80vh;
+        background: #2D415B;
+        border-radius: 8px;
+        padding: 1.5rem;
+    }
+
+    .menu__title {
+        display: none;
+    }
+
+    .menu__list {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        padding-bottom: 1.5rem;
+    }
+
+    .menu .menu__profile {
+        display: flex;
+        height: auto;
+        margin: 0.5rem 0;
     }
 }

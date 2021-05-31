@@ -21,7 +21,6 @@
                     <img class="logo__img" src="./assets/img/logo.svg" alt="Alura Dev">
                 </a>
             </h1>
-
             <input class="search-box" type="search" placeholder="Busque por algo"></input>
             <div class="profile">
                 <img class="profile__avatar" src="./assets/img/photo.png" alt="Avatar do usuário">
@@ -29,10 +28,11 @@
             </div>
             <div class="topnav">
                 <button class="topnav__item search-icon" type="button"></button>
-                <button" class="topnav__item menu-icon" type="button"></button>
+                <button class="topnav__item menu-icon" type="button"></button>
+                <button" class="topnav__item x-icon removeElement" type="button"></button>
             </div>
         </header>
-
+    
         <main class="body-content">
             <section class="menu">
                 <nav>
@@ -47,7 +47,7 @@
                             </a>
                         </li>
                         <li class="menu__item">
-                            <a href="comunidade.html" class="menu__link">
+                            <a href="comunidade.html" class="menu__link menu__link--active">
                                 <div class="menu__icon">
                                     <i class="menu__icon__image menu__icon--community"></i>
                                 </div>
@@ -56,6 +56,10 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="menu__profile profile">
+                    <img class="profile__avatar" src="./assets/img/photo.png" alt="Avatar do usuário">
+                    <p class="profile__name">Harry</p>
+                </div>
             </section>
 
             <section class="projects">
@@ -249,6 +253,7 @@ const unfold = (f, seed) => {
             </section>
 
         </main>
-        <script src="likeToggle.js"></script>
+        <script src="./assets/js/headerMenu.js"></script>
+        <script src="./assets/js/likeToggle.js"></script>
     </body>
 </html>
