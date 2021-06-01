@@ -1,7 +1,7 @@
 (() => {
 
 const codeWrapper = document.querySelector('.editor__codeWrapper')
-const projectLanguage = document.querySelector(['[data-form="projectLanguage"]'])
+const projectLanguage = document.querySelector(['[data-form="language"]'])
 const highlightButton = document.querySelector('[data-btn="highlight"]')
 let codeInput =  codeWrapper.querySelector('code')
 

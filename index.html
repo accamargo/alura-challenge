@@ -63,14 +63,14 @@
         </section>
         
         <section class="editor">
-            <div id="editorBackground" class="editor__background">
+            <div class="editor__background" data-editor="background">
                 <div class="editor__field">
                     <ul class="editor__idle-buttons">
                         <li class="editor__idle-button idle-button--red"></li>
                         <li class="editor__idle-button idle-button--yellow"></li>
                         <li class="editor__idle-button idle-button--green"></li>
                     </ul>
-                    <div class="editor__codeWrapper" data-editor>
+                    <div class="editor__codeWrapper">
                         <code id="codeEditorInput" class="editor__codeInput hljs" 
                             contenteditable="true" spellcheck="false" aria-label="Editor">
                         </code>
@@ -86,25 +86,25 @@
                 <fieldset class="project-form__fieldset">
                     <legend class="project-form__legend">Seu projeto</legend>
                     <input id="projectFormName" type="text" class="project-form__item" placeholder="Nome do seu projeto"
-                        required autocomplete="off">
+                        data-form="name" required autocomplete="off" >
                     <textarea id="projectFormDescription" name="" class="project-form__item" 
-                        placeholder="Descrição do seu projeto"></textarea>
+                        data-form="description" placeholder="Descrição do seu projeto"></textarea>
                 </fieldset>
 
                 <fieldset class="project-form__fieldset">
                     <legend class="project-form__legend">Personalização</legend>
-                    <select id="projectFormLanguage" name="" class="project-form__item" data-form="projectLanguage">
+                    <select id="projectFormLanguage" name="" class="project-form__item" data-form="language">
                         <option value="JavaScript" class="form-item__option">JavaScript</option>
                         <option value="HTML" class="form-item__option">HTML</option>
                         <option value="CSS" class="form-item__option">CSS</option>
                     </select>
                     <div class="project-form__item color-picker">
-                        <div id="colorPickerApparence" class="color-picker__apparence">
-                            <input id="colorPickerInput" class="color-picker__input" type="color" value="#6BD1FF">
+                        <div class="color-picker__apparence" data-color>
+                            <input id="colorPickerInput" class="color-picker__input" type="color" value="#6BD1FF" data-form="color">
                         </div>
                     </div>
                 </fieldset>
-                <button class="project-form__submit">Salvar projeto</button>
+                <button class="project-form__submit" data-btn="save">Salvar projeto</button>
             </form>
         </section>
 
@@ -112,7 +112,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
     <script src="./assets/js/codeHighlight.js"></script>
     <script src="./assets/js/headerMenu.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
