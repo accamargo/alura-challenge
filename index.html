@@ -70,8 +70,8 @@
                         <li class="editor__idle-button idle-button--yellow"></li>
                         <li class="editor__idle-button idle-button--green"></li>
                     </ul>
-                    <div class="editor__codeWrapper">
-                        <code id="codeEditorInput" class="editor__codeInput hljs" 
+                    <div class="editor__codeWrapper" data-editor="codeWrapper">
+                        <code id="codeEditorInput" class="editor__codeInput hljs" data-editor="codeInput"
                             contenteditable="true" spellcheck="false" aria-label="Editor">
                         </code>
                     </div>
@@ -81,12 +81,11 @@
         </section>
 
         <section class="project-form-section">
-
             <form class="project-form">
                 <fieldset class="project-form__fieldset">
                     <legend class="project-form__legend">Seu projeto</legend>
-                    <input id="projectFormName" type="text" class="project-form__item" placeholder="Nome do seu projeto"
-                        data-form="name" required autocomplete="off" >
+                    <input id="projectFormName" type="text" class="project-form__item" placeholder="Nome do seu projeto" 
+                    data-form="name" autocomplete="off" required>
                     <textarea id="projectFormDescription" name="" class="project-form__item" 
                         data-form="description" placeholder="Descrição do seu projeto"></textarea>
                 </fieldset>
@@ -104,15 +103,14 @@
                         </div>
                     </div>
                 </fieldset>
-                <button class="project-form__submit" data-btn="save">Salvar projeto</button>
+                <button class="project-form__submit" type="submit" data-btn="save">Salvar projeto</button>
             </form>
         </section>
 
     </main>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
-    <script src="./assets/js/codeHighlight.js"></script>
     <script src="./assets/js/headerMenu.js"></script>
-    <script src="./assets/js/index.js"></script>
+    <script type="module" src="./assets/js/index.js"></script>
 </body>
 
 </html>

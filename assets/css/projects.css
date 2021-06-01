@@ -99,19 +99,6 @@ pre {
     background-color: #27C93F;
 }
 
-.color--1 {
-    background-color: #9AFF6B;
-}
-.color--2 {
-    background-color: #6B83FF;
-}
-.color--3 {
-    background-color: #FFC46B;
-}
-.color--4 {
-    background-color: #FF6BCD;
-}
-
 .project__social {
     display: none;
     background-color: rgba(0, 0, 0, 0.16);
@@ -153,11 +140,11 @@ pre {
 }
 
 .project__like svg {
-    fill: white;
+    fill: #FFFFFF;
 }
 
 .project__like.active svg {
-    fill: red;
+    fill: #F65151;
 }
 
 .project__author .author__avatar {
