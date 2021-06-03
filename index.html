@@ -77,7 +77,27 @@
                     </div>
                 </div>
             </div>
-            <button class="editor__hightligth" type="button" data-btn="highlight">Visualizar com o highlight</button>
+            <button class="editor__button" type="button" data-btn="highlight">Visualizar com o highlight</button>
+
+            <div class="editor__export export">
+                <h2 class="export__title">Exportar</h2>
+                <input type="text" class="export__name" data-export="name" placeholder="Nome do arquivo">
+                <select name="" id="" class="export__format" data-export="format">
+                    <option value="" disabled selected hidden>Escolha o formato</option>
+                    <option value="txt" class="export__option">Texto</option>
+                    <optgroup label="Imagem" class="export__optgroup">
+                        <option value="png" class="export__option">PNG</option>
+                        <option value="jpeg" class="export__option">JPEG</option>
+                    </optgroup>
+                    <optgroup label="Código" class="export__optgroup">
+                        <option value="js" class="export__option">JavaScript</option>
+                        <option value="html" class="export__option">HTML</option>
+                        <option value="css" class="export__option">CSS</option>
+                    </optgroup>
+                </select>
+                <button class="editor__button" type="button" data-btn="export">Exportar</button>
+            </div>
+
         </section>
 
         <section class="project-form-section">
@@ -108,8 +128,9 @@
         </section>
 
     </main>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
     <script src="./assets/js/headerMenu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js"></script>
     <script type="module" src="./assets/js/index.js"></script>
 </body>
 

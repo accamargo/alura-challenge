@@ -8,7 +8,7 @@ export function addHighlight() {
 }
 
 export function changeLanguage() {
-    codeWrapper.innerHTML = `<code id="codeEditorInput" class="editor__codeInput hljs ${this.value} 
+    codeWrapper.innerHTML = `<code id="codeEditorInput" class="editor__codeInput hljs ${this.value}" 
     data-editor="codeInput" aria-label="Editor" spellcheck="false" contenteditable="true"> </code>`
     codeWrapper.firstChild.innerText = codeInput.innerText
 }
@@ -16,6 +16,3 @@ export function changeLanguage() {
 codeWrapper.addEventListener('click', () => {
     codeInput.focus()
 })
-
-
-

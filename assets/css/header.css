@@ -7,7 +7,7 @@
 }
 
 .search-box { 
-    background-color:rgba(255, 255, 255, 0.16);
+    background-color:var(--inputColor);
     border: none;
     border-radius: 10px;
     height: 100%;
@@ -16,11 +16,11 @@
 }
 
 .search-box::placeholder {
-    color: rgba(255, 255, 255, 0.64);
+    color: var(--placeholderColor);
 }
 
 .search-box:hover, .search-box:focus {
-    background-color: rgba(255, 255, 255, 0.24);
+    background-color: var(--inputColorFocus);
     outline: none;
 }
 
