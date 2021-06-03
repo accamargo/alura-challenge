@@ -21,7 +21,7 @@
                 <img class="logo__img" src="./assets/img/logo.svg" alt="Alura Dev">
             </a>
         </h1>
-        <input class="search-box" type="search" placeholder="Busque por algo"></input>
+        <input class="search-box" type="search" placeholder="Busque por algo">
         <div class="profile">
             <img class="profile__avatar" src="./assets/img/photo.png" alt="Avatar do usuário">
             <p class="profile__name">Harry</p>
@@ -29,7 +29,7 @@
         <div class="topnav">
             <button class="topnav__item search-icon" type="button"></button>
             <button class="topnav__item menu-icon" type="button"></button>
-            <button" class="topnav__item x-icon removeElement" type="button"></button>
+            <button class="topnav__item x-icon removeElement" type="button"></button>
         </div>
     </header>
 
@@ -61,7 +61,7 @@
                 <p class="profile__name">Harry</p>
             </div>
         </section>
-        
+
         <section class="editor">
             <div class="editor__background" data-editor="background">
                 <div class="editor__field">
@@ -82,7 +82,7 @@
             <div class="editor__export export">
                 <h2 class="export__title">Exportar</h2>
                 <input type="text" class="export__name" data-export="name" placeholder="Nome do arquivo">
-                <select name="" id="" class="export__format" data-export="format">
+                <select id="exportFormat" class="export__format" data-export="format">
                     <option value="" disabled selected hidden>Escolha o formato</option>
                     <option value="txt" class="export__option">Texto</option>
                     <optgroup label="Imagem" class="export__optgroup">
@@ -104,22 +104,23 @@
             <form class="project-form">
                 <fieldset class="project-form__fieldset">
                     <legend class="project-form__legend">Seu projeto</legend>
-                    <input id="projectFormName" type="text" class="project-form__item" placeholder="Nome do seu projeto" 
-                    data-form="name" autocomplete="off" required>
-                    <textarea id="projectFormDescription" name="" class="project-form__item" 
-                        data-form="description" placeholder="Descrição do seu projeto"></textarea>
+                    <input id="projectFormName" type="text" class="project-form__item" placeholder="Nome do seu projeto"
+                        data-form="name" autocomplete="off" required>
+                    <textarea id="projectFormDescription" class="project-form__item" data-form="description"
+                        placeholder="Descrição do seu projeto"></textarea>
                 </fieldset>
 
                 <fieldset class="project-form__fieldset">
                     <legend class="project-form__legend">Personalização</legend>
-                    <select id="projectFormLanguage" name="" class="project-form__item" data-form="language">
+                    <select id="projectFormLanguage" class="project-form__item" data-form="language">
                         <option value="JavaScript" class="form-item__option">JavaScript</option>
                         <option value="HTML" class="form-item__option">HTML</option>
                         <option value="CSS" class="form-item__option">CSS</option>
                     </select>
                     <div class="project-form__item color-picker">
                         <div class="color-picker__apparence" data-color>
-                            <input id="colorPickerInput" class="color-picker__input" type="color" value="#6BD1FF" data-form="color">
+                            <input id="colorPickerInput" class="color-picker__input" type="color" value="#6BD1FF"
+                                data-form="color">
                         </div>
                     </div>
                 </fieldset>

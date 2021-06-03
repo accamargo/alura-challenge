@@ -14,57 +14,55 @@
 </head>
 
 <body>
+    <header class="header">
+        <h1>
+            <a class="logo" href="index.html">
+                <img class="logo__img" src="./assets/img/logo.svg" alt="Alura Dev">
+            </a>
+        </h1>
+        <input class="search-box" type="search" placeholder="Busque por algo">
+        <div class="profile">
+            <img class="profile__avatar" src="./assets/img/photo.png" alt="Avatar do usuário">
+            <p class="profile__name">Harry</p>
+        </div>
+        <div class="topnav">
+            <button class="topnav__item search-icon" type="button"></button>
+            <button class="topnav__item menu-icon" type="button"></button>
+            <button class="topnav__item x-icon removeElement" type="button"></button>
+        </div>
+    </header>
 
-    <body>
-        <header class="header">
-            <h1>
-                <a class="logo" href="index.html">
-                    <img class="logo__img" src="./assets/img/logo.svg" alt="Alura Dev">
-                </a>
-            </h1>
-            <input class="search-box" type="search" placeholder="Busque por algo"></input>
-            <div class="profile">
+    <main class="body-content">
+        <section class="menu">
+            <nav>
+                <h2 class="menu__title">Menu</h2>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="index.html" class="menu__link">
+                            <div class="menu__icon">
+                                <i class="menu__icon__image menu__icon--codeEditor "></i>
+                            </div>
+                            <h3 class="menu__option">Editor de código</h3>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="comunidade.html" class="menu__link menu__link--active">
+                            <div class="menu__icon">
+                                <i class="menu__icon__image menu__icon--community"></i>
+                            </div>
+                            <h3 class="menu__option">Comunidade</h3>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu__profile profile">
                 <img class="profile__avatar" src="./assets/img/photo.png" alt="Avatar do usuário">
                 <p class="profile__name">Harry</p>
             </div>
-            <div class="topnav">
-                <button class="topnav__item search-icon" type="button"></button>
-                <button class="topnav__item menu-icon" type="button"></button>
-                <button" class="topnav__item x-icon removeElement" type="button"></button>
-            </div>
-        </header>
-    
-        <main class="body-content">
-            <section class="menu">
-                <nav>
-                    <h2 class="menu__title">Menu</h2>
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="index.html" class="menu__link">
-                                <div class="menu__icon">
-                                    <i class="menu__icon__image menu__icon--codeEditor "></i>
-                                </div>
-                                <h3 class="menu__option">Editor de código</h3>
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="comunidade.html" class="menu__link menu__link--active">
-                                <div class="menu__icon">
-                                    <i class="menu__icon__image menu__icon--community"></i>
-                                </div>
-                                <h3 class="menu__option">Comunidade</h3>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="menu__profile profile">
-                    <img class="profile__avatar" src="./assets/img/photo.png" alt="Avatar do usuário">
-                    <p class="profile__name">Harry</p>
-                </div>
-            </section>
+        </section>
 
-            <section class="projects">
-<!--         
+        <section class="projects">
+            <!--         
                 <div class="project__card">
                     <div class="project__background color--4">
                         <div class="project__field">
@@ -111,11 +109,12 @@ const unfold = (f, seed) => {
                         </div>
                     </div>
                 </div> -->
-            </section>
+        </section>
 
-        </main>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
-        <script src="./assets/js/headerMenu.js"></script>
-        <script type="module" src="./assets/js/community.js"></script>
-    </body>
+    </main>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script src="./assets/js/headerMenu.js"></script>
+    <script type="module" src="./assets/js/community.js"></script>
+</body>
+
 </html>
