@@ -1,9 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+:root {
+    /* Color buttons and inputs */
+    --inputColor: rgba(255, 255, 255, 0.16);
+    --inputColorFocus: rgba(255, 255, 255, 0.24);
+    --placeholderColor: rgba(255, 255, 255, 0.64);
+
+    --buttonLightBlue: #5081FB;
+    --buttonLightBlueText: #051D3B;
+    --buttonLightBlueHover: #7BA4FC; /* Also used for active */
+    --buttonLightBlueFocus: #96B9FD;
+    --buttonLightBlueBorder: rgba(80, 129, 251, 0.72);
+
+    --buttonDarkBlue: rgba(80, 129, 251, 0.08);
+    --buttonDarkBlueHover: rgba(71, 82, 110, 0.16); /* Also used for active*/
+    --buttonDarkBlueFocus: rgba(80, 129, 251, 0.24); /* Also used for border*/
+
+    /*Font-family*/
+    --roboto: 'Roboto Mono', monospace;
+    --inter: 'Inter', sans-serif;
+}
+
 * {
 	border: 0;
     color: #FFFFFF;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--inter);
     margin: 0;
 	padding: 0;
 }
