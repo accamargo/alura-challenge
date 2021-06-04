@@ -12,7 +12,7 @@
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, .5);
     left: 50%;
-    transform: translate(-50%,-52%);
+    transform: translate(-50%,-50%);
     transition: 300ms ease-in;
     top: 45%;
     padding: 2.5rem 2rem 2rem;
@@ -24,6 +24,7 @@
   color: black;
   font-size: 1.75rem;
   letter-spacing: 0.1rem;
+  text-align: center;
 }
 
 .dialog__text { 
@@ -84,4 +85,25 @@
   left: 0;
   width: 100%;
   z-index: 2;
+}
+
+@media screen and (max-width:950px) {
+  .dialog__body {
+    width: 400px;
+  }
+} 
+
+@media screen and (max-width:550px) {
+  .dialog__body {
+    width: 200px;
+  }
+  
+  .dialog__title {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+  }
+
+  .dialog__text { 
+    font-size: 1rem;
+  }
 }
