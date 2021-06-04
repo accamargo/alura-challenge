@@ -9,6 +9,24 @@
     flex-wrap: wrap;
 }
 
+.projects__empty{
+    text-align: center;
+    margin-top: 3rem;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.projects__clickhere {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+a.projects__clickhere {
+    color: rgb(80, 129, 251);
+    text-decoration: underline;
+}
+
 .project__card {
     display: flex;
     flex-direction: column;
@@ -150,7 +168,6 @@ pre {
 .project__author .author__avatar {
     height: 1.5rem;
 }
-
 
 @media screen and (max-width:1250px) {
     .projects {

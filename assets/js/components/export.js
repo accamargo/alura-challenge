@@ -1,12 +1,19 @@
 const fileName = document.querySelector('[data-export="name"]')
 const fileFormat = document.querySelector('[data-export="format"]')
 const editorDownload = document.querySelector('[data-editor="background"]')
+const formatError = document.querySelector('[data-error="format"]')
+const formatSelect = document.querySelector('[data-export="format"]')
+
+formatSelect.addEventListener('change', () =>{
+    formatError.classList.add('displayNone')
+})
 
 export function handleDownload() {
     if (!fileFormat.value){
-        console.log('Formato invalido')
+        formatError.classList.remove('displayNone')
         return;
     }
+    formatError.classList.add('displayNone')
     let file = (fileName.value || 'aluradev') + '.' + fileFormat.value;
     if(fileFormat.value == 'png'|| fileFormat.value == 'jpeg') 
         imageContent(file)

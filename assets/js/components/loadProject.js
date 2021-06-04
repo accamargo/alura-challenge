@@ -1,10 +1,14 @@
 const projectSession = document.querySelector('.projects')
 
 export function loadProjects() {
-    if (localStorage == 0) return
+    if (localStorage.length == 0){
+        projectSession.innerHTML = `<h4 class="projects__empty">Nenhum projeto aqui :/</h4>
+        <h5 class="projects__clickhere">Para criar um projeto <a class="projects__clickhere" href="./index.html"> clique aqui</a></h5>`
+        return
+    } 
     let projects = []
-    
-    for(let i = 0; i < localStorage.length; i++) {
+    for(let i = localStorage.length - 1; i >= 0; i--) {
+        console.log(i, localStorage.length)
         projects.push(JSON.parse(localStorage.getItem(i)))
     }
     projects.forEach(project => {
