@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./assets/css/code-editor.css">
     <link rel="stylesheet" href="./assets/css/atom-one-dark.css">
     <link rel="stylesheet" href="./assets/css/project-form.css">
+    <link rel="stylesheet" href="./assets/css/error.css">
+    <link rel="stylesheet" href="./assets/css/dialog.css">
 </head>
 
 <body>
@@ -96,18 +98,19 @@
                     </optgroup>
                 </select>
                 <button class="editor__button" type="button" data-btn="export">Exportar</button>
+                <span class="error displayNone" data-error="format" role="alert">Formato inválido</span>
             </div>
-
         </section>
 
         <section class="project-form-section">
             <form class="project-form">
                 <fieldset class="project-form__fieldset">
                     <legend class="project-form__legend">Seu projeto</legend>
-                    <input id="projectFormName" type="text" class="project-form__item" placeholder="Nome do seu projeto"
-                        data-form="name" autocomplete="off" required>
-                    <textarea id="projectFormDescription" class="project-form__item" data-form="description"
-                        placeholder="Descrição do seu projeto"></textarea>
+                    <input id="projectFormName" type="text" class="project-form__item" placeholder="Nome do seu projeto" 
+                    data-form="name" autocomplete="off">
+                    <span class="error displayNone" data-error="name" role="alert">Necessário um nome</span>
+                    <textarea id="projectFormDescription" name="" class="project-form__item" 
+                        data-form="description" placeholder="Descrição do seu projeto"></textarea>
                 </fieldset>
 
                 <fieldset class="project-form__fieldset">
@@ -127,11 +130,22 @@
                 <button class="project-form__submit" type="submit" data-btn="save">Salvar projeto</button>
             </form>
         </section>
-
     </main>
-    <script src="./assets/js/headerMenu.js"></script>
+
+    <div class="dialog" data-dialog="dialog">
+        <div class="dialog__body">
+            <h2 class="dialog__title">Projeto salvo com sucesso</h2>
+            <h3 class="dialog__text">Você será redirecionado para comunidade</h3>
+            <button class="dialog__close" data-dialog="button" type="button" aria-label="Fechar modal"></button>
+            <div class="dialog__loading"></div>
+        </div>
+        <div class="dialog__overlay" data-dialog="overlay"></div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js"></script>
+    <script src="./assets/js/headerMenu.js"></script>
+    <script src="./assets/js/dialog.js"></script>
     <script type="module" src="./assets/js/index.js"></script>
 </body>
 

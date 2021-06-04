@@ -20,7 +20,8 @@ projectLanguage.addEventListener('change', changeLanguage)
 
 highlightButton.addEventListener('click', addHighlight)
 
-saveButton.addEventListener('click', () => {
+saveButton.addEventListener('click', (event) => {
+    event.preventDefault()
     if (typeof(Storage) !== "undefined") {
         handleNewProject()
     } else {
