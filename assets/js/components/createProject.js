@@ -51,5 +51,5 @@ function redirect() {
             dialog.classList.remove('dialog--open')
             window.location.href = "./comunidade.html"
         }
-    }, 7000)
+    }, 5000)
 }

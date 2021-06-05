@@ -1,0 +1,24 @@
+{
+  "name": "alura-challenge",
+  "version": "1.0.0",
+  "description": "Implementação de um sistema utilizando HTML, CSS e JavaScript",
+  "main": "index.js",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "http-server -a localhost -p 5000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/accamargo/alura-challenge.git"
+  },
+  "author": "accamargo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/accamargo/alura-challenge/issues"
+  },
+  "homepage": "https://github.com/accamargo/alura-challenge#readme"
+}
